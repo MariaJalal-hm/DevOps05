@@ -1,3 +1,13 @@
+Question 6: Git Reset
+
+The term reset stands for undoing changes. The git reset command is used to reset the changes. The git reset command has three core forms of invocation. These forms are as follows.
+
+    
+    git reset --soft, which will keep your files, and stage all changes back automatically.
+    git reset --hard, which will completely destroy any changes and remove them from the local directory. Only use this if you know what you’re doing.
+    git reset --mixed, which is the default, and keeps all files the same but unstages the changes. This is the most flexible option, but despite the name, it doesn’t modify files.
+
+
 Question 5: What are the stages of GIT?
 The Three States
 
@@ -8,7 +18,7 @@ The Three States
     Staged means that you have marked a modified file in its current version to go into your next commit snapshot.
 
     Committed means that the data is safely stored in your local database.
-    
+
 This leads us to the three main sections of a Git project: the working tree, the staging area, and the Git directory.
 
 Question 4: Difference Between Git and GitHub

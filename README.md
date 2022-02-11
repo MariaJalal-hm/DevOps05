@@ -1,3 +1,19 @@
+Question 4: Difference Between Git and GitHub
+
+Git: Git is a distributed version control system for tracking changes in source code during software development. It is designed for coordinating work among programmers, but it can be used to track changes in any set of files. Its goals include speed, data integrity, and support for distributed, non-linear workflows.
+
+GitHub: GitHub is a web-based Git repository hosting service, which offers all of the distributed revision control and source code management (SCM) functionality of Git as well as adding its own features.
+
+Git vs	GitHub
+1.	Git is a software.	GitHub is a service.
+2.	Git is a command-line tool	GitHub is a graphical user interface
+3.	Git is installed locally on the system	GitHub is hosted on the web
+4.	Git is maintained by linux.	GitHub is maintained by microsoft.
+5.	Git is focused on version control and code sharing.	GitHub is focused on centralized source code hosting.
+6.	Git is a version control system to manage source code history.	GitHub is a hosting service for Git repositories.
+7.	Git was first released in 2005.	GitHub was launched in 2008.
+8.	Git has no user management feature.	GitHub has built-in user management feature.
+
 Question 3: Benefits of cloud computing
 
 Cloud computing offers your business many benefits. It allows you to set up what is essentially a virtual office to give you the flexibility of connecting to your business anywhere, any time. With the growing number of web-enabled devices used in today's business environment (e.g. smartphones, tablets), access to your data is even easier.

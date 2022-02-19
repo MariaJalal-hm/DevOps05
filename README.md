@@ -1,3 +1,27 @@
+Question 2: Docker Architechture
+
+Docker Engine
+
+It is the core part of the whole Docker system. Docker Engine is an application which follows client-server architecture. It is installed on the host machine. There are three components in the Docker Engine:
+
+    Server: It is the docker daemon called dockerd. It can create and manage docker images. Containers, networks, etc.
+    Rest API: It is used to instruct docker daemon what to do.
+    Command Line Interface (CLI): It is a client which is used to enter docker commands. 
+
+Docker Client
+
+Docker users can interact with Docker through a client. When any docker commands runs, the client sends them to dockerd daemon, which carries them out. Docker API is used by Docker commands. Docker client can communicate with more than one daemon.
+
+Docker Registries
+
+It is the location where the Docker images are stored. It can be a public docker registry or a private docker registry. Docker Hub is the default place of docker images, its stores’ public registry. 
+
+When docker pull or docker run commands executed, the required docker image is pulled from the configured registry. When you execute docker push command, the docker image is stored on the configured registry.
+
+Docker Objects
+
+Images, containers, volumes, networks; all these are Docker objects.
+
 
 Question 1: Docker Container VS VMS
 

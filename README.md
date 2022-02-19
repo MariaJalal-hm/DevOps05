@@ -1,3 +1,61 @@
+Question 7: Command to exec into the above container and replace the default index.html to a custom one, which says that â€œI am becoming a Docker Expertâ€� and it should be persisted for the next times.
+
+--> cd workingfolder cat > index.html â€œI am becoming a Docker Expertâ€� ^C
+
+Question 6: Exit the above container, and now recreate the container by Volume using bind mounting
+
+--> docker container run -it --name=assignment-2 -p 9001:80 -v /usr/share/nginx/html/:/workingfolder/
+
+Question 5: Write commands to Exec into the container and cat the output of the default nginx file at /usr/share/nginx/html/index.html
+
+--> docker container run -it --name=assignment-2 -p 9001:80 > /usr/share/nginx/html/index.html
+
+Question 4: Write command to see logs of the above container
+
+--> docker container logs assignment-2
+
+Question 3: Write command to create an nginx container in detached mode with name assignment-2 running on host port 9090 on a custom network named assignment-2
+
+--> docker container run -d --name assignment-2 --publish 9090:80 --network=assignment-2 nginx
+
+Question 2: Docker Architechture
+
+Docker Engine
+
+It is the core part of the whole Docker system. Docker Engine is an application which follows client-server architecture. It is installed on the host machine. There are three components in the Docker Engine:
+
+    Server: It is the docker daemon called dockerd. It can create and manage docker images. Containers, networks, etc.
+    Rest API: It is used to instruct docker daemon what to do.
+    Command Line Interface (CLI): It is a client which is used to enter docker commands. 
+
+Docker Client
+
+Docker users can interact with Docker through a client. When any docker commands runs, the client sends them to dockerd daemon, which carries them out. Docker API is used by Docker commands. Docker client can communicate with more than one daemon.
+
+Docker Registries
+
+It is the location where the Docker images are stored. It can be a public docker registry or a private docker registry. Docker Hub is the default place of docker images, its stores’ public registry. 
+
+When docker pull or docker run commands executed, the required docker image is pulled from the configured registry. When you execute docker push command, the docker image is stored on the configured registry.
+
+Docker Objects
+
+Images, containers, volumes, networks; all these are Docker objects.
+
+
+Question 1: Docker Container VS VMS
+
+VMs	                                           Containers
+Heavyweight.	                        Lightweight.
+Limited performance.	                Native performance.
+Each VM runs in its own OS.	            All containers share the host OS.
+Hardware-level virtualization.	        OS virtualization.
+Startup time in minutes.	            Startup time in milliseconds.
+Allocates required memory.	            Requires less memory space.
+Fully isolated and hence more secure.	Process-level isolation, possibly less secure.
+
+=========================== Assignment 1 =======================
+
 Question 6: Git Reset
 
 The term reset stands for undoing changes. The git reset command is used to reset the changes. The git reset command has three core forms of invocation. These forms are as follows.

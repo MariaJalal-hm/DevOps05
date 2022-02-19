@@ -1,3 +1,17 @@
+
+Question 1: Docker Container VS VMS
+
+VMs	                                           Containers
+Heavyweight.	                        Lightweight.
+Limited performance.	                Native performance.
+Each VM runs in its own OS.	            All containers share the host OS.
+Hardware-level virtualization.	        OS virtualization.
+Startup time in minutes.	            Startup time in milliseconds.
+Allocates required memory.	            Requires less memory space.
+Fully isolated and hence more secure.	Process-level isolation, possibly less secure.
+
+=========================== Assignment 1 =======================
+
 Question 6: Git Reset
 
 The term reset stands for undoing changes. The git reset command is used to reset the changes. The git reset command has three core forms of invocation. These forms are as follows.

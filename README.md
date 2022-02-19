@@ -1,3 +1,7 @@
+Question 4: Write command to see logs of the above container
+
+--> docker container logs assignment-2
+
 Question 3: Write command to create an nginx container in detached mode with name assignment-2 running on host port 9090 on a custom network named assignment-2
 
 --> docker container run -d --name assignment-2 --publish 9090:80 --network=assignment-2 nginx
